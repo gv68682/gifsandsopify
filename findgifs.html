@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Gifs</title>
+    <link rel = 'stylesheet' href = 'findgifs.css'>
+</head>
+<body>
+    <h2> Hello MITxPRO!</h2>
+        <div>
+            <input type = 'text' id = 'gif-input' placeholder="Search Gifs Here">
+            <button id= 'find-gifs' onclick="searchGifs()">Find Gifs</button>
+            <button onclick="document.getElementById('gif-input').value = ''">Clear input</button>
+            <div id = 'gif-container'></div>
+        </div>
+</body>
+<script src = 'findgifs.js'></script>
+</html>
