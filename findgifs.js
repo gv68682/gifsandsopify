@@ -23,12 +23,13 @@ function renderGifs(gifs){
         console.log(gif.images.original.url)
         img.setAttribute('alt-src', gif.images.original_still.url)
 
-        img.onClick = () => {
+        img.onclick = () => {
             let currUrl = img.getAttribute('src')
             let altUrl= img.getAttribute('alt-src')
 
             img.setAttribute('src', altUrl)
             img.setAttribute('alt-src', currUrl)
+            console.log(img)
         } 
         gifContainer.appendChild(img)  
     });
